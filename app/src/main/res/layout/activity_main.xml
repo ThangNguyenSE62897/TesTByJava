@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="300pt"
+        android:layout_height="190pt"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:background="#1E90FF">
+
+        <EditText
+            android:layout_width="250pt"
+            android:layout_height="50pt"
+            android:inputType="text"
+            android:text="input"
+            android:id="@+id/txtInput"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300pt"
+        android:layout_height="160dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#1E90FF"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="4dp">
+        
+        <TextView
+            android:theme="@android:style/Widget.KeyboardView"
+            android:id="@+id/viewKeyboard"
+            android:layout_width="225pt"
+            android:layout_height="66pt"
+            android:layout_gravity="center"
+            android:layout_marginStart="5pt"
+            android:background="#0000CD">
+
+            <Keyboard
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:HorizontalGap="0px"
+                android:keyWidth="10%p"
+                android:keyHeight="60dp"
+                android:VerticalGap="0px">
+
+                <Row>
+                    <Key android:codes="113" android:keyEdgeFlags="left" android:keyLabel="q"/>
+                    <Key android:codes="119" android:keyLabel="w"/>
+                    <Key android:codes="101" android:keyLabel="e"/>
+                    <Key android:codes="114" android:keyLabel="r"/>
+                    <Key android:codes="116" android:keyLabel="t"/>
+                    <Key android:codes="121" android:keyLabel="y"/>
+                    <Key android:codes="117" android:keyLabel="u"/>
+                    <Key android:codes="105" android:keyLabel="i"/>
+                    <Key android:codes="111" android:keyLabel="o"/>
+                    <Key android:codes="112" android:keyLabel="p"/>
+                </Row>
+
+            </Keyboard>
+        </TextView>
+
+        <TextView
+            android:id="@+id/viewNumber"
+            android:layout_width="60pt"
+            android:layout_height="66pt"
+            android:layout_gravity="center"
+            android:layout_marginStart="5pt"
+            android:layout_marginEnd="5pt"
+            android:background="#0000CD"/>
+    </LinearLayout>
+</RelativeLayout>
